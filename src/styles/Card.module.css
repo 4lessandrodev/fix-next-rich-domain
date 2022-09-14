@@ -1,0 +1,11 @@
+.Card {
+  display: flex;
+}
+
+.Header {
+  display: flex;
+}
+
+.Body {
+  display: flex;
+}
