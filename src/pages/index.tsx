@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Card from '../components/Card'
 import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react'
-import { Context } from 'rich-domain';
+import { Context, Id } from 'rich-domain';
 const context = Context.events();
 
 const Home: NextPage = () => {
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Card name="Jane Doe" />
+      <Card name={`User ${events.length}`} id={Id()} />
       <div>
         <ul>
           {events.map((evt: any, i) => (
