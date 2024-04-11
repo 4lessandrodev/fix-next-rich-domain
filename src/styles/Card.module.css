@@ -1,5 +1,18 @@
 .Card {
   display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.Card:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+  color: black;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .Header {
@@ -8,4 +21,10 @@
 
 .Body {
   display: flex;
+}
+
+.Label {
+  font-size: smaller;
+  justify-self: end;
+  align-self: flex-end;
 }

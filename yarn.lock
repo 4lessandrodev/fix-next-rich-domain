@@ -1497,10 +1497,10 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
-rich-domain@^1.12.0:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/rich-domain/-/rich-domain-1.12.0.tgz#03de7bd25b15f2c6abb869fdfc33a91a88276242"
-  integrity sha512-cBPvJYXK5iGGvYXiHi5m4ANIQrQf9/wYZhNn6VHer8c6no0YmHjxsUYoICFbNz4ztNA7Erd9enLP6THFMRAeXg==
+rich-domain@1.20.3-beta.1:
+  version "1.20.3-beta.1"
+  resolved "https://registry.yarnpkg.com/rich-domain/-/rich-domain-1.20.3-beta.1.tgz#b5a99d707996d30c0adb15d9b08f48c52bf3f3c6"
+  integrity sha512-0Brptrz3iiUf6TM3tdW1YZABevQCSbhJ7H88w8XpAahW8SgmbYS9dtAkY/pxLB05flrBCqJTOeTNE7b2fBYIbA==
 
 rimraf@^3.0.2:
   version "3.0.2"
