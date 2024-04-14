@@ -3,7 +3,7 @@ import Name from "./user-name.value-object";
 
 interface Props {
 	id?: UID;
-	name: Name;
+	userName: Name;
 }
 
 export class User extends Entity<Props> {

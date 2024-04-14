@@ -4,11 +4,11 @@ import User from "./user.aggregate";
 
 interface Props {
 	id?: UID;
-	name: string;
+	userName: string;
 }
 
 export default function CreateUser(props: Props): User {
-	const name = Name.create(props.name).value();
+	const userName = Name.create(props.userName).value();
 	const id = props.id;
-	return User.create({ name, id }).value();
+	return User.create({ userName, id }).value();
 }

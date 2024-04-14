@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { JSXElementConstructor, ReactElement, useEffect, useState } from 'react';
 import { UID } from 'rich-domain';
 import CreateUser from '../../domain/factory';
 import User from '../../domain/user.aggregate';
@@ -8,27 +8,27 @@ const context = Context.events();
 
 interface Props {
 	id?: UID;
-	name: string;
+	userName: string;
 }
 
-export default function Card({ id, name }: Props) {
+export default function Card({ id, userName }: Props): any {
 
 	const [user, setUser] = useState<User | undefined>();
 
 	useEffect(() => {
-		setUser(CreateUser({ name, id }));
-	}, [id, name]);
+		setUser(CreateUser({ userName, id }));
+	}, [id, userName]);
 
 	const handler = () => {
 		const occurredAt = new Date().toISOString();
-		context.dispatchEvent('SIGNUP', user?.toObject() ?? null, occurredAt);
+		context.dispatchEvent('USER:*', user?.toObject() ?? null, occurredAt);
 	}
 
 	return (
 		<div className={style.Card} onClick={() => handler()}>
 			<div className={style.Header}><p>Id: {user?.id.value()}</p></div>
-			<div className={style.Body}><p>Name: {user?.get('name').get('value')}</p></div>
-			<p className={style.Label}>Click to dispatch Event</p>
+			<div className={style.Body}><p>Name: {user?.get('userName').get('value')}</p></div>
+			<p className={style.Label}>Click to dispatch Event to USER:*</p>
 		</div>
 	)
 }

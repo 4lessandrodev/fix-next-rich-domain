@@ -5,6 +5,7 @@
   border: 1px solid white;
   border-radius: 1rem;
   margin: 1rem;
+  max-width: 50rem;
 }
 
 .Card:hover {
